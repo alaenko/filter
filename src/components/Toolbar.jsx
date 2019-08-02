@@ -18,7 +18,7 @@ function Toolbar(props) {
 }
 
 Toolbar.propTypes = {
-  filters: PropTypes.instanceOf(Array).isRequired,
+  filters: PropTypes.array.isRequired,
   selected: PropTypes.string.isRequired,
   onSelectFilter: PropTypes.func.isRequired
 }
