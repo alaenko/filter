@@ -10,8 +10,8 @@ function Toolbar(props) {
         <button
           onClick={() => onSelectFilter(filter)}
           className={filter === selected ? 'selected' : ''}
-          key={filter
-        }> {filter} </button>
+          key={filter}
+        > {filter} </button>
       ))}
     </div>
   )
@@ -20,7 +20,7 @@ function Toolbar(props) {
 Toolbar.propTypes = {
   filters: PropTypes.instanceOf(Array).isRequired,
   selected: PropTypes.string.isRequired,
-  onSelectFilter: PropTypes.func.isRequired,
+  onSelectFilter: PropTypes.func.isRequired
 }
 
 export default Toolbar

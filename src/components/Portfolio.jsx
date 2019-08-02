@@ -54,11 +54,10 @@ const projects = [{
   img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/filter/img/place200x290_3.png",
   category: "Flayers"
 }];
-
+const filters = ["All", "Websites", "Flayers", "Business Cards"];
 export class Portfolio extends Component {
   state = {
     selected: 'All',
-    filters: ["All", "Websites", "Flayers", "Business Cards"],
     projects: projects
   }
 
@@ -73,7 +72,7 @@ export class Portfolio extends Component {
     return (
       <div>
         <Toolbar    
-          filters={this.state.filters}
+          filters={filters}
           selected={this.state.selected}
           onSelectFilter = {this.onSelectFilter}
           />

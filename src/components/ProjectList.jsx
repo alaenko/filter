@@ -16,7 +16,7 @@ function ProjectList(props) {
 }
 
 ProjectList.propTypes = {
-  projects: PropTypes.instanceOf(Array).isRequired
+  projects: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default ProjectList
